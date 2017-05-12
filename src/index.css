@@ -1,5 +1,190 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
 }
+
+body div {
+	height: 100%;
+	width: 100%;
+	display: flex;
+}
+
+.app {
+	display: flex; 
+	flex: 1;
+	flex-direction: row;	
+}
+
+.header {
+	height: 200px;
+	background-size: 100%;
+	margin: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 100px;
+	color: darkseagreen;
+}
+
+.sidebar {
+	width: 200px;
+}
+
+.todo-wrapper {
+	width: 400px;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	padding-bottom: 20px;
+}
+
+.middle {
+	flex: 1; 
+	display: flex; 
+	flex-direction: column;
+	align-items: center;
+	min-width: 400px;
+}
+
+.todos {
+	padding: 10px;
+	overflow-y: scroll;
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	border-style: solid;
+	border-width: 1px;
+	border-color: lightgray;
+	margin-bottom: 10px;
+}
+
+.close-link {
+	position: absolute;
+	font-size: 16px;
+	cursor: pointer;
+	right: 12px;
+}
+
+.close-link::before {
+	font-family: 'Material Icons';
+	content: 'close';
+}
+
+.close-link::hover {
+	color: gray;
+}
+
+.edit-todo {
+	display: flex;
+}
+
+.edit-todo form {
+	display: flex;
+	flex: 1;
+}
+
+.edit-todo form input{
+	flex: 1;
+}
+
+.todo {
+	position: relative;
+	width: 100%;
+	display: flex;
+	flex-direction: row; 
+	padding: 5px 0px;
+	border-bottom: solid 1px lightgray;
+}
+
+.todo::hover {
+	background-color: whitesmoke;
+}
+
+.todo .icon {
+	position: absolute;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.todo .icon::hover {
+	color: gray;	
+}
+
+.todo .icon .edit {
+	right: 20px;
+}
+	
+.todo .icon .remove {
+	font-family: 'Material Icons';
+	content: 'close';
+}
+
+.todo .icon .edit::hover {
+	font-family: 'Material Icons';
+	content: 'edit';
+}
+	
+.todo .icon .remove::hover {
+	right: 0px;
+}
+
+.add-todo {
+	padding: 10px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: lightgray;
+	margin-bottom: 10px;
+	background-color: whitesmoke;
+}
+
+.add-todo form {
+	display: flex;
+	flex: 1;
+}
+
+.add-todo form input {
+	flex: 1;
+}
+
+.share-todos {
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	position: relative;
+	border-style: solid;
+	border-width: 1px;
+	border-color: lightgray;
+	background-color: whitesmoke;
+
+	button {
+		width: 100px;
+	}
+	
+	input {
+		flex: 1;
+	}
+}
+
+.share-todos {
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	position: relative;
+	border-style: solid;
+	border-width: 1px;
+	border-color: lightgray;
+	background-color: whitesmoke;
+
+	button {
+		width: 100px;
+	}
+	
+	input {
+		flex: 1;
+	}
+}
+
+
