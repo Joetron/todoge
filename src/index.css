@@ -158,33 +158,47 @@ body div {
 	border-width: 1px;
 	border-color: lightgray;
 	background-color: whitesmoke;
-
-	button {
-		width: 100px;
-	}
-	
-	input {
-		flex: 1;
-	}
 }
 
-.share-todos {
-	display: flex;
-	flex-direction: column;
+.share-todos button {
+	width: 100px;
+}
+
+.share-todos input {
+	flex: 1;
+}
+
+.collapse {
+	visibility: collapse;
+}
+
+.todo-input {
+	margin-right: 5px;
+}
+
+.todo-completed {
+	text-decoration: line-through;
+}
+
+.todo-text {
+	flex: 1;
+	margin-right: 40px;
+	cursor: default;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+.filter-container {
 	padding: 10px;
-	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
 	border-style: solid;
 	border-width: 1px;
 	border-color: lightgray;
+	margin-bottom: 10px;
 	background-color: whitesmoke;
-
-	button {
-		width: 100px;
-	}
-	
-	input {
-		flex: 1;
-	}
 }
-
 
