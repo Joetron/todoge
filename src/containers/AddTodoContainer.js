@@ -1,6 +1,7 @@
 import { connect } from 'react-redux';
 import { addTodo } from '../actions';
 import AddTodoComponent from '../components/AddTodoComponent.jsx';
+import uuidV1 from 'uuid/v1';
 
 const mapStateToProps = () => {
 	return {};	
@@ -9,7 +10,7 @@ const mapStateToProps = () => {
 const mapDispatchToProps = (dispatch) => {
 	return {
 		onAddTodo: (text) => {
-			dispatch(addTodo(text));
+			dispatch(addTodo(uuidV1(), text));
 		}
 	};
 };

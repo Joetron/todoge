@@ -17,7 +17,7 @@ function _todoModel(id, text) {
 }
 
 var queryProps = readPropsFromQuery([]);
-const initialState = queryProps ? queryProps : readFromSessionStorage(sessionStorage, TODOS, []);
+const initialState = queryProps ? queryProps : readFromSessionStorage(TODOS, []);
 
 function todos(state = initialState, action) {
 	var nextState;
@@ -78,7 +78,7 @@ function todos(state = initialState, action) {
 			break;
 	}
 	
-	writeToSessionStorage(sessionStorage, TODOS, nextState);
+	writeToSessionStorage(TODOS, nextState);
 	return nextState;
 }
 

@@ -1,12 +1,10 @@
 import ActionTypes from '../constants/ActionTypes.js';
-import uuidV1 from 'uuid/v1';
 
-function addTodo(text) {
+function addTodo(id, text) {
 	return {
 		type: ActionTypes.ADD_TODO,
 		payload: {
-			text,
-			id: uuidV1()
+			id, text
 		}
 	};
 }
