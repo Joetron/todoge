@@ -202,3 +202,94 @@ body {
 	background-color: whitesmoke;
 }
 
+.doge-image {
+	background-image: url("Doge.jpg");
+	width: 100%;
+    height: 100%;
+    background-size: 100%;
+    display: block;
+    font-family: Comic Sans MS;
+    font-weight: bold;
+    text-overflow: ellipsis;
+}
+
+.doge-text-one {
+	color: red;
+	padding: 5%;
+    font-size: 24px;
+}
+
+.doge-text-two {
+	color: blue;
+	padding: 15%;
+    font-size: 20px;
+}
+
+.doge-text-three {
+	color: lawngreen;
+	padding: 10%;
+    font-size: 16px;
+}
+
+.doge-text-four {
+	color: purple;
+	padding: 5%;
+    font-size: 20px;
+}
+
+.doge-text-five {
+	color: yellow;
+	padding: 5%;
+    font-size: 12px;
+}
+
+.doge-text-six {
+	color: cyan;
+    padding-top: 55%;
+    flex: 1;
+    font-size: 16px;
+}
+
+.doge-row-top {
+	width: 100%;
+	height: 65%;
+	display: flex;
+}
+
+.doge-row-top-left {
+	width: 47%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.doge-row-top-right {
+	flex: 1;
+	display: flex;
+}
+
+.doge-row-top-right-left {
+	width: 50%;
+	height: 25%;
+    display: flex;
+}
+
+.doge-row-top-right-right {
+	flex: 1;
+    display: flex;
+}
+
+.doge-row-top-text {
+	flex: 1;
+}
+
+.doge-row-bottom {
+	width: 100%;
+	height: 35%;
+	display: flex;
+}
+
+.doge-row-bottom-text {
+	flex: 1;
+}
+

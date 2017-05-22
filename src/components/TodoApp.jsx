@@ -3,6 +3,7 @@ import AddTodoContainer from '../containers/AddTodoContainer.js'
 import TodosContainer from '../containers/TodosContainer.js'
 import Header from './parts/Header.jsx';
 import Sidebar from './parts/Sidebar.jsx'
+import DogeComponent from './DogeComponent.jsx'
 import FilterContainer from '../containers/FilterContainer.js'
 import ShareTodosContainer from '../containers/ShareTodosContainer.js'
 
@@ -12,7 +13,7 @@ const TodoApp = () => (
 		<div className="middle" >
 			<div className="todo-wrapper" >
 				<Header>
-					<div>Todos</div>
+					<DogeComponent />
 				</Header>
 				<AddTodoContainer />
 				<TodosContainer />
