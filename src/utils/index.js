@@ -29,7 +29,7 @@ function _readPropsFromQuery(query, defaultData) {
 }
 
 function createLinkFromTodos(todos) {
-	return _createLinkFromTodos(todos, location.origin);
+	return _createLinkFromTodos(todos, location.origin + location.pathname);
 }
 
 function createLinkFromTodosTest(todos, testOrigin) {
